@@ -1,10 +1,10 @@
 let distance = 0
 basic.forever(function () {
     distance = sonar.ping(
-    DigitalPin.P0,
-    DigitalPin.P1,
-    PingUnit.Centimeters
+    DigitalPin.P14,
+    DigitalPin.P15,
+    PingUnit.MicroSeconds
     )
-    basic.showString("" + Math.round(distance / 58 * 100 / 100) + "cm")
+    basic.showString("" + (distance))
     basic.pause(1000)
 })
