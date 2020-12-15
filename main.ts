@@ -3,7 +3,7 @@ basic.forever(function () {
     distance = sonar.ping(
     DigitalPin.P14,
     DigitalPin.P15,
-    PingUnit.MicroSeconds
+    PingUnit.Centimeters
     )
     basic.showString("" + (distance))
     basic.pause(1000)
