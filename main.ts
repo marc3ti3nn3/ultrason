@@ -5,6 +5,6 @@ basic.forever(function () {
     DigitalPin.P15,
     PingUnit.Centimeters
     )
-    basic.showString("" + (distance))
+    basic.showString("" + Math.round(distance / 58 * 100) * 100 + "cm")
     basic.pause(1000)
 })
